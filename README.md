@@ -1,3 +1,5 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 # Collision-based dynamics for the optimal transport problem
 
 In this repository, we present an implementation of collision-based dynamics for the optimal transport problem. This git repository has been used to produce results in the paper:
