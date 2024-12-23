@@ -5,7 +5,7 @@
 In this repository, we present an implementation of collision-based dynamics for the optimal transport problem. This git repository has been used to produce results in this paper:
 
 ## PyTorch implementation
-We provide a PyTorch implementation of the collision-based dynamics to solve optimal transport, with the application as a loss function. First import
+We provide a PyTorch implementation of the collision-based dynamics to solve optimal transport, with the application as a loss function. First import it
 ```
 from collision import collOT_pytorch
 ```
@@ -22,7 +22,7 @@ cd src/
 python3 setup.py build_ext --inplace
 ```
 
-Then, in the Python code, simply import the collOT_c via
+Then, in the Python code, simply import the ```collOT_c``` via
 ```
 from collision_wrapper import collOT_c
 ```
