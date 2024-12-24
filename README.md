@@ -17,7 +17,7 @@ x, y, log_loss = collOT_pytorch(x, y, MinIter=100, MaxIter=1000, tol = 1e-6, avg
 ```
 
 ## Implementation in C
-For faster runs on the CPU, we have prepared an implementation in C with a Python wrapper. To use it, first, compile the code by
+For faster runs on the CPU, we have prepared an implementation in C with a Python wrapper. To use it, first, you need to compile the code. On Linux, it can be done on terminal simply by
 
 ```
 cd src/
