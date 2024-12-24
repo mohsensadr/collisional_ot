@@ -1,6 +1,6 @@
 import torch
 
-def OT_col(x, y, avg_window=10, tol=1e-6, MinIter=10, MaxIter=100):
+def collOT_pytorch(x, y, avg_window=10, tol=1e-6, MinIter=10, MaxIter=100):
       tries = int(len(x))
       sum_ = 1000000
       dists_coll = torch.zeros(MaxIter+1)
