@@ -4,8 +4,10 @@
 
 In this repository, we present an implementation of collision-based dynamics for the optimal transport problem. This git repository has been used to produce results in this paper:
 
+Sadr, Mohsen, and Hossein Gorji. "Collision-based Dynamics for Multi-Marginal Optimal Transport." arXiv preprint at [arXiv:2412.16385 (2024)](https://doi.org/10.48550/arXiv.2412.16385)
+
 ## PyTorch implementation
-We provide a PyTorch implementation of the collision-based dynamics to solve the optimal transport problem to be used as a loss function in training statistical models. First import the function via
+We provide a PyTorch implementation of the collision-based dynamics to solve the optimal transport problem to be used as a loss function in training statistical models. First, import the function via
 ```
 from collision import collOT_pytorch
 ```
