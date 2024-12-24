@@ -2,7 +2,7 @@
 
 # Collisional Optimal Transport
 
-In this repository, we present an implementation of collision-based dynamics for the optimal transport problem. This git repository has been used to produce results in this paper:
+In this repository, we present an implementation of collision-based dynamics for the optimal transport problem. This git repository has been used to produce results in the following paper:
 
 Sadr, Mohsen, and Hossein Gorji. "Collision-based Dynamics for Multi-Marginal Optimal Transport." arXiv preprint at [arXiv:2412.16385 (2024)](https://doi.org/10.48550/arXiv.2412.16385)
 
