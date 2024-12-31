@@ -29,7 +29,6 @@ python3 setup.py build_ext --inplace
 
 Then, in the Python code, import the ```collOT_c``` via
 ```
-
 from collision_wrapper import collOT_c
 ```
 and call the function via something like
