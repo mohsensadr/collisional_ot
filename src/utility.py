@@ -1,5 +1,5 @@
 import numpy as np
-
+from scipy.stats import linregress
 
 def fit_xp(x, y):
     log_x = np.log10(x)
