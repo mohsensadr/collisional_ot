@@ -35,6 +35,10 @@ jobs:
       #- name: Run flake8
       #  run: flake8 src tests
 
+      - name: Build Cython extensions
+        run: |
+          python setup.py build_ext --inplace
+
       # 6. Run tests with pytest
       - name: Run tests
         run: |
