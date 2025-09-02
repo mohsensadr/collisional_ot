@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-from src import collision_numpy as cn
+import collisional_ot.numpy.collision_numpy as cn
 
 def test_total_cost_known_case():
     # Simple deterministic case: 2 marginals, 2 points, 1D

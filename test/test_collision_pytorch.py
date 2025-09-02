@@ -1,6 +1,6 @@
 import torch
 import pytest
-from src import collision_pytorch as cp
+import collisional_ot.pytorch.collision_pytorch as cp
 
 def test_collOT_pytorch_shapes_and_types():
     # Fixed seed for deterministic behavior

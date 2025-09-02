@@ -1,6 +1,6 @@
 import numpy as np
 import pytest
-from src import utility as ut
+import collisional_ot.utility as ut
 
 
 def test_fit_xp_simple_case(monkeypatch):
