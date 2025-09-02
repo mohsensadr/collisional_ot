@@ -38,7 +38,7 @@ jobs:
       # 6. Run tests with pytest
       - name: Run tests
         run: |
-          PYTHONPATH=. pytest \
+          PYTHONPATH=./src  pytest \
             --cov=src \
             --cov-report=term-missing \
             --cov-report=html \
