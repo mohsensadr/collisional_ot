@@ -12,6 +12,11 @@ Sadr, Mohsen, and Hossein Gorji. "Collision-based Dynamics for Multi-Marginal Op
 ## Numpy Implementation
 Here, we provide the most accessible (and not fastest) implementation of the collisional OT in NumPy. Simply, first import the library
 ```
+import sys
+import os
+src_path = os.path.abspath(os.path.join(os.getcwd(), '../src/collisional_ot/numpy'))
+sys.path.append(src_path)
+
 from collision_numpy import collOT_numpy
 ```
 Given the samples are stored in ```X``` with shape 
@@ -25,12 +30,15 @@ X, log_loss, nt = collOT_numpy(X)
 For faster runs on the CPU, we have prepared an implementation in C with a Python wrapper. To use it, first, you need to compile the code. On Linux, it can be done on a terminal simply by
 
 ```
-cd src/
 python3 setup.py build_ext --inplace
 ```
 
 Then, in the Python code, import the ```collOT_c``` via
 ```
+import sys
+import os
+src_path = os.path.abspath(os.path.join(os.getcwd(), '../src/collisional_ot/cython'))
+sys.path.append(src_path)
 from collision_wrapper import collOT_c
 ```
 and call the function via something like
@@ -41,6 +49,10 @@ X, log_loss, nsteps = collOT_c(X, MinIter=100, MaxIter=1000, tol = 1e-6, avg_win
 ## PyTorch Implementation
 We provide a PyTorch implementation of the collision-based dynamics to solve the 2-marginal optimal transport problem to be used as a loss function in training statistical models. First, import the function via
 ```
+import sys
+import os
+src_path = os.path.abspath(os.path.join(os.getcwd(), '../src/collisional_ot/pytorch/'))
+sys.path.append(src_path)
 from collision import collOT_pytorch
 ```
 and then call it simply by
